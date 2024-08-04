@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGMAN | Guess or Die</title>
+    <link rel="icon" type="image/png" href="image/icon2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <audio id="back-music" src="thehangman.mp3" loop></audio>
+    <audio id="btn-music" src="analog2.mp3"></audio>
+
+    <div class="musicArea">
+
+        <button class="musicToggleBtn"><i class="fa-brands fa-itunes-note"></i></button>
+        <button class="soundToggleBtn"><i class="fa-solid fa-volume-high"></i></button>
+    </div>
+
+
+
+    <div class="startMenu">
+        <p>HANG</p>
+        <p>MAN</p>
+        <button class="startBtn">Start</button>
+    </div>
+
+    <div id="blurScreen">
+    </div>
+    <div class="winScreen">
+        <div class="winScreenMove">
+            <span>Congratulations!</span>
+            <span>You've won!</span>
+            <button class="again">Start again</button>
+        </div>
+    </div>
+
+    <div class="loseScreen">
+        <div class="loseScreenMove">
+            <span>Game over!</span>
+            <span>You've lost!</span>
+            <button class="again">Start again</button>
+        </div>
+    </div>
+
+    <div class="head">
+        <h1>HANGMAN</h1>
+        <h2>Let`s GO</h2>
+    </div>
+    <section id="main">
+
+        <div class="hangMan">
+
+        </div>
+
+        <div class="section">
+            <!-- <div class="button">
+                <button id="start">Start</button>
+            </div> -->
+
+            <div class="desc">
+
+            </div>
+
+            <div class="secret">
+
+            </div>
+
+            <div class="letters">
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
